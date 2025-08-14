@@ -1,0 +1,18 @@
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from backend.app.core.app_postgres.db_engine import async_session_factory
+from backend.app.domain.services.uow.unit_of_work import AbstractUnitOfWork
+
+
+class SQLAlchemyUnitOfWork(AbstractUnitOfWork):
+    def __init__(self):
+        self.session: AsyncSession = async_session_factory()
+
+    async def commit(self):
+        await self.session.commit()
+
+    async def rollback(self):
+        await self.session.rollback()
+
+    async def close(self):
+        await self.session.close()
