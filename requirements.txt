@@ -15,7 +15,7 @@ configobj==5.0.6
 constantly==15.1.0
 copier==9.4.1
 cryptography==3.4.8
-dbus-python==1.2.18
+dbus-python==1.4.0
 distro==1.7.0
 distro-info==1.1+ubuntu0.2
 dunamai==1.23.0
