@@ -63,7 +63,7 @@ python-apt==2.4.0+ubuntu4
 python-debian==0.1.43+ubuntu1.1
 python-magic==0.4.24
 pytz==2022.1
-PyYAML==5.4.1
+PyYAML==6.0.2
 questionary==2.1.0
 requests==2.25.1
 SecretStorage==3.3.1
